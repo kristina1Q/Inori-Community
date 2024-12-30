@@ -1,0 +1,59 @@
+.back{
+    background-color: aliceblue;
+    width: 98%;
+    height: 400px;
+    border-radius: 5px;         /*边框圆角效果*/
+    margin-top: 40px;
+    margin-left: 1%;            /*宽度为98%，设置%1的宽度就能居中*/
+    padding-top: 40px;      /*在盒子内的元素设置边距，margin是在外面加，panding是在里面加*/
+    box-sizing: border-box;     /*设置panding后不改变原来的大小*/
+}
+body{
+   background: linear-gradient(    /*渐变效果*/
+    to right,
+    rgb(0, 136, 255),
+    rgb(75, 255, 117)
+   );
+}
+.title{
+    font-size: 30px;        /*调整字体大小*/
+    font-weight: 700;       /*调整字体粗细*/ 
+    text-align: center;     /*居中*/
+}
+.title:hover{
+    text-decoration: underline blue;
+    
+}
+.cin{
+    border: 1px solid aliceblue;    /*solid表示边框以实线形式显示*/
+    outline: none;          /*去除选中时的高亮*/
+    border-radius: 20px 0 0 20px;       /*顺时针改变圆角*/
+    width: 50%;
+    height: 40px;
+    padding-left: 15px;
+    
+}
+.todoform{
+    display: flex;          /*里面的元素横着排*/
+    margin-left: 25%;
+    margin-top: 30px;
+}
+.buttom{
+    width: 100px;
+    height: 40px;
+    background: linear-gradient(
+        to right,
+    rgb(98, 0, 255),
+    rgb(232, 255, 59)
+    );
+    border-radius: 0 20px 20px 0;
+    text-align: center;
+    color: aliceblue;
+    line-height: 40px;
+    user-select: none;          /*无法被用户选中*/
+    cursor: pointer; 
+}
+.pic{
+    width: 7%;
+    height: auto;
+}
